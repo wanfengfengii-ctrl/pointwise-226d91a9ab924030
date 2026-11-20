@@ -1,0 +1,15 @@
+{
+  "batch_id": "workday",
+  "calibration": {
+    "version": "C1",
+    "target_unit": "格",
+    "rules": [["半格", 1, 2], ["格", 1, 1]]
+  },
+  "readings": [["A", null, "格"], ["B", 0, "格"], ["C", 20, "半格"]],
+  "corrections": [["C", 22]],
+  "later_corrections": [["C", 24]],
+  "order_id": "per-inspection",
+  "origins": ["C", "A", "B"],
+  "shift": "night",
+  "account": "night-workday"
+}
