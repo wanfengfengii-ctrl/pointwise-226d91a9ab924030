@@ -15,6 +15,16 @@ class DirectoryEntry:
     sha256: str
 
 
+@dataclass(frozen=True)
+class V2SelectionEntry:
+    ordinal: int
+    origin: str
+    request_id: str
+    start: int
+    end: int
+    sha256: str
+
+
 def build_directory(readings: 'tuple[SelectedReading, ...]',
                     bodies: tuple[bytes, ...]) -> tuple[DirectoryEntry, ...]:
     directory = []
